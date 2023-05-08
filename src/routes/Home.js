@@ -8,7 +8,6 @@ function Home() {
   const [filter, setFilter] = useState("");
 
   const getMovies = async (rate) => {
-    //영화 디테일 url
     const json = await (
       await fetch(
         `https://yts.mx/api/v2/list_movies.json?minimum_rating=${rate}&sort_by=year`
