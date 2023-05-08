@@ -10,13 +10,11 @@ function App() {
         element: <Home />,
       },
       {
-        path: "/movies/:id",
+        path: "/movie/:id",
         element: <Detail />,
       },
     ],
-    {
-      basename: process.env.PUBLIC_URL,
-    }
+    { basename: process.env.PUBLIC_URL }
   );
 
   return <RouterProvider router={router} />;
