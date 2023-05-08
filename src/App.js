@@ -10,7 +10,7 @@ function App() {
         element: <Home />,
       },
       {
-        path: "/movie/:id",
+        path: "/movies/:id",
         element: <Detail />,
       },
     ],
